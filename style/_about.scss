@@ -1,0 +1,31 @@
+$background: #011627;
+$primary-color: rgb(233, 78, 27);
+#s2 {
+  display: flex;
+  justify-content: flex-end;
+}
+.about {
+  padding: 2rem;
+  padding-left: 2rem;
+  //border: darken($background, 10) solid 8px;
+  //background-color: lighten($background, 3);
+  border-radius: 25px;
+  margin: 3rem;
+  margin-top: 15rem;
+  width: 50%;
+
+  h2 {
+    padding-left: 1rem;
+    font-size: 50px;
+  }
+
+  div {
+    padding: 1rem;
+    line-height: 35px;
+    border-radius: 25px;
+    transition: 400ms;
+    p {
+      font-size: 25px;
+    }
+  }
+}

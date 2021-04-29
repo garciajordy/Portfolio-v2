@@ -1,0 +1,67 @@
+$background: #011627;
+$primary-color: rgb(233, 78, 27);
+
+nav {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3rem;
+  max-width: 100%;
+  background-color: lighten($background, 7);
+  opacity: 0.5;
+  transition: 400ms;
+
+  &:hover {
+    opacity: 1;
+    &:hover {
+    }
+  }
+
+  a {
+    font-weight: 800;
+
+    &:nth-child(1) {
+      position: absolute;
+      left: 15%;
+      top: 15px;
+    }
+    &:nth-child(2) {
+      position: absolute;
+      left: 35%;
+      top: 15px;
+    }
+    &:nth-child(3) {
+      position: absolute;
+      left: 55%;
+      top: 15px;
+    }
+    &:nth-child(4) {
+      position: absolute;
+      left: 75%;
+      top: 15px;
+    }
+  }
+}
+
+.top {
+  transform: translateY(-200px);
+}
+.underline {
+  height: 5px;
+  position: fixed;
+  top: 33px;
+  left: 14.8%;
+  z-index: 999;
+  width: 50px;
+  transition: 400ms;
+  background-color: $primary-color;
+}
+.about-line {
+  left: 34.8%;
+}
+
+.project-line {
+  left: 54.8%;
+}
