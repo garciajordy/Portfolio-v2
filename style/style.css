@@ -587,11 +587,21 @@ nav a:nth-child(4) {
   font-size: 25px;
 }
 
-.projects-con {
+.whole-project {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+}
+
+.projects-con {
+  display: block;
+}
+
+.column-2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
 }
 
 .project {
@@ -864,11 +874,12 @@ footer i:hover {
 
 footer:before {
   content: "";
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
-  width: 51%;
+  width: 50%;
   background: #011627;
   -webkit-transform: skew(0deg, 6deg);
           transform: skew(0deg, 6deg);
@@ -876,13 +887,14 @@ footer:before {
 }
 
 footer:after {
+  overflow: hidden;
   content: "";
   position: absolute;
   z-index: -1;
   top: 0;
   right: 0;
   height: 100%;
-  width: 50%;
+  width: 50.5%;
   background: #011627;
   -webkit-transform: skew(0deg, -6deg);
           transform: skew(0deg, -6deg);
@@ -902,8 +914,8 @@ html {
 }
 
 body {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#011627), color-stop(#011627), to(#9c9c9c));
-  background-image: linear-gradient(#011627, #011627, #9c9c9c);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#011627), color-stop(#011627), color-stop(#011627), color-stop(#011627), color-stop(#9c9c9c), to(#d1d1d1));
+  background-image: linear-gradient(#011627, #011627, #011627, #011627, #9c9c9c, #d1d1d1);
   z-index: -1;
 }
 
@@ -1181,6 +1193,11 @@ span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .empty-2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .empty {
     padding: 0.5rem;

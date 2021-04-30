@@ -27,23 +27,25 @@ footer {
 }
 footer:before {
   content: "";
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
-  width: 51%;
+  width: 50%;
   background: $background;
   transform: skew(0deg, 6deg);
   z-index: -1;
 }
 footer:after {
+  overflow: hidden;
   content: "";
   position: absolute;
   z-index: -1;
   top: 0;
   right: 0;
   height: 100%;
-  width: 50%;
+  width: 50.5%;
   background: $background;
   transform: skew(0deg, -6deg);
 }

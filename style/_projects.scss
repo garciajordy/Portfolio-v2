@@ -1,8 +1,14 @@
 $primary-color: rgb(233, 78, 27);
 
-.projects-con {
+.whole-project {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.projects-con {
+  display: block;
+}
+.column-2 {
+  grid-column: 2/3;
 }
 
 .project {
@@ -126,6 +132,7 @@ $primary-color: rgb(233, 78, 27);
   margin-top: 15rem;
   margin-left: 8rem;
 }
+
 .empty {
   padding: 5rem;
   font-size: 16px;
