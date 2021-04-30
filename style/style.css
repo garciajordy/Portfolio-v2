@@ -49,18 +49,6 @@
   line-height: 35px;
 }
 
-nav.s1 {
-  background: #9bd;
-}
-
-nav.s2 {
-  background: #d9b;
-}
-
-nav.s3 {
-  background: #db9;
-}
-
 .hexagon {
   position: absolute;
   z-index: -1;
@@ -978,7 +966,6 @@ body {
 }
 
 body {
-  position: relative;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#011627), color-stop(#011627), color-stop(#011627), color-stop(#011627), color-stop(#9c9c9c), to(#9c9c9c));
   background-image: linear-gradient(#011627, #011627, #011627, #011627, #9c9c9c, #9c9c9c);
   z-index: -1;
