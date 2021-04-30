@@ -978,6 +978,7 @@ body {
 }
 
 body {
+  position: relative;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#011627), color-stop(#011627), color-stop(#011627), color-stop(#011627), color-stop(#9c9c9c), to(#9c9c9c));
   background-image: linear-gradient(#011627, #011627, #011627, #011627, #9c9c9c, #9c9c9c);
   z-index: -1;
