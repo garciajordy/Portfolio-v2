@@ -1,4 +1,8 @@
 @media screen and (max-width: 500px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
   .header {
     font-size: 40px;
   }
@@ -65,7 +69,6 @@
     }
   }
   .contact-con {
-    padding: 0;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -364,10 +367,43 @@
     }
     div {
       gap: 0;
+      div {
+        a {
+          margin: 0;
+        }
+      }
     }
   }
 
   .active {
     color: $primary-color;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    input {
+      width: 200px;
+    }
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .contact-con {
+      display: flex;
+      justify-content: center;
+    }
+    h1 {
+      font-size: 40px;
+      padding: 0.5rem;
+      margin-top: 15rem;
+    }
+    p {
+      width: 100%;
+      font-size: 20px;
+    }
   }
 }

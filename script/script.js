@@ -189,8 +189,15 @@ function navbar() {
     
     }
  }
-window.onscroll = function (){ scrolling() }
-  
+window.onscroll = function () { scrolling() }
+
+
+function sendEmail() {
+    
+    let subject = `Email from ${document.getElementById("name").value} (${document.getElementById("email").value})` 
+    let body = document.getElementById("text").value
+    window.open(`mailto:jordygarcia0119@gmail.com?subject=${subject}&body=${body}`);
+}
 
 console.log(contact)
 nameWriter()

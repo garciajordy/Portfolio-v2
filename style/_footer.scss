@@ -5,18 +5,32 @@ footer {
   position: relative;
   text-align: center;
   padding: 12px;
-  margin-bottom: 6px;
   height: 150px;
-  transform: rotate(180deg);
   width: 100%;
-  margin-bottom: -50px;
   margin-top: 10rem;
+  background-color: #011627;
+
+  .resume {
+    margin: 1rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-weight: 800;
+    &:hover {
+      color: $primary-color;
+    }
+  }
 
   div {
-    transform: rotate(180deg);
-    display: flex;
-    gap: 5rem;
-    justify-content: center;
+    div {
+      display: flex;
+
+      margin: 1rem;
+      justify-content: center;
+
+      a {
+        margin: 1rem;
+      }
+    }
   }
   i {
     transform: scale(1.5);
@@ -27,25 +41,24 @@ footer {
 }
 footer:before {
   content: "";
-  overflow: hidden;
+
   position: absolute;
-  top: 0;
+  top: -50px;
   left: 0;
   height: 100%;
   width: 50%;
   background: $background;
-  transform: skew(0deg, 6deg);
+  transform: skew(0deg, -6deg);
   z-index: -1;
 }
 footer:after {
-  overflow: hidden;
   content: "";
   position: absolute;
   z-index: -1;
-  top: 0;
+  top: -50px;
   right: 0;
   height: 100%;
   width: 50.5%;
   background: $background;
-  transform: skew(0deg, -6deg);
+  transform: skew(0deg, 6deg);
 }

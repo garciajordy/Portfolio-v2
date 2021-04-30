@@ -12,6 +12,7 @@
 @import "projects";
 @import "contact";
 @import "footer";
+@import "form";
 
 * {
   margin: 0;
@@ -20,9 +21,11 @@
   color: #fff;
   max-width: 100%;
 }
-html {
-  overflow-x: hidden;
+
+html,
+body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {

@@ -1,0 +1,39 @@
+#text {
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  input {
+    width: 400px;
+    height: 2rem;
+    padding-left: 0.5rem;
+    font-size: 20px;
+    color: #011627;
+    border-radius: 30px;
+    border: none;
+  }
+  textarea {
+    border-radius: 20px;
+    padding-left: 0.5rem;
+    resize: none;
+    height: 4rem;
+    border: none;
+    font-size: 20px;
+    color: #011627;
+  }
+  label {
+    font-size: 20px;
+  }
+  button {
+    background-color: rgb(233, 78, 27);
+    border-radius: 30px;
+    padding: 0.5rem;
+    border: none;
+    margin-top: 0.5rem;
+  }
+}
+.form-con {
+  display: flex;
+  justify-content: center;
+}
