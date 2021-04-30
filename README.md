@@ -4,7 +4,7 @@
 
 > Welcome to my personal portfolio.
 
-![screenshot](assets/screenshot-portfolio.PNG)
+![screenshot](assets/ascreenshot-portfolio.PNG)
 
 ## Built With
 
