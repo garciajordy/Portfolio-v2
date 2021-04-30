@@ -945,9 +945,13 @@ form label {
 form button {
   background-color: #e94e1b;
   border-radius: 30px;
-  padding: 0.5rem;
   border: none;
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
+  font-size: 20px;
+}
+
+form button:hover {
+  cursor: pointer;
 }
 
 .form-con {

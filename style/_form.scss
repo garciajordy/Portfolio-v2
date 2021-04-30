@@ -28,9 +28,14 @@ form {
   button {
     background-color: rgb(233, 78, 27);
     border-radius: 30px;
-    padding: 0.5rem;
+
     border: none;
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
+    font-size: 20px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 .form-con {
