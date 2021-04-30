@@ -1,3 +1,6 @@
+$background: #011627;
+$primary-color: rgb(233, 78, 27);
+
 .contact {
   h1 {
     font-size: 50px;
@@ -5,5 +8,26 @@
     margin-top: 15rem;
     width: 100%;
     text-align: center;
+  }
+}
+.contact-con {
+  gap: 2rem;
+  padding: 5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    padding: 2rem 3rem;
+    font-size: 30px;
+    background-color: $background;
+    border-radius: 20px;
+    border: #fff solid 5px;
+    transition: 400ms;
+
+    &:hover {
+      padding: 1rem 2rem;
+      border: darken($primary-color, 10) solid 5px;
+    }
   }
 }

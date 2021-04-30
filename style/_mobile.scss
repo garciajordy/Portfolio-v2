@@ -1,13 +1,24 @@
 @media screen and (max-width: 500px) {
   .header {
-    font-size: x-large;
+    font-size: 40px;
+  }
+  #head-one,
+  #head-two {
+    font-size: 25px;
+    span {
+      font-size: 25px;
+    }
   }
   .intro-con {
-    margin: 1rem;
+    margin: 0.5rem;
     margin-top: 6rem;
+    p {
+      font-size: 20px;
+      padding-right: 0;
+    }
 
     h1 {
-      font-size: larger;
+      font-size: 40px;
     }
   }
   .hexagon {
@@ -43,10 +54,313 @@
     }
   }
 
-  .about {
-    margin: 15px;
-    margin-top: 15rem;
-    padding: 15px;
+  .contact {
+    h1 {
+      font-size: 40px;
+      padding: 0;
+      margin-bottom: 1rem;
+      margin-top: 15rem;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .contact-con {
+    gap: 1rem;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div {
+      padding: 1rem 2rem;
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+      background-color: $background;
+      border-radius: 20px;
+      border: #fff solid 5px;
+      transition: 400ms;
+
+      &:hover {
+        padding: 0.5rem 1rem;
+        border: darken($primary-color, 10) solid 5px;
+      }
+    }
+  }
+
+  //// Project
+
+  .projects-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    margin: 1rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    z-index: 1;
+    img {
+      transform: scale(1.05);
+    }
+    .project-con {
+      width: 100%;
+    }
+    &:hover {
+      .project-title,
+      .project-title-2 {
+        transform: scale(1);
+        top: 10px;
+      }
+      .project-text {
+        transform: scale(1);
+      }
+      .live-demo {
+        transform: scale(1);
+        bottom: 15px;
+        right: 15px;
+      }
+      .github {
+        transform: scale(1);
+        bottom: 15px;
+        left: 15px;
+      }
+      img {
+        transform: scale(1.3);
+      }
+    }
+    img {
+      max-width: 100%;
+      transition: 500ms;
+    }
+
+    .project-text {
+      position: absolute;
+      transition: 400ms;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 20px;
+      z-index: 1;
+      transform: scale(0);
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.616);
+      }
+    }
+  }
+  .github {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: scale(0);
+    transition: 400ms;
+    i {
+      transition: 400ms;
+    }
+
+    &:hover {
+      color: $primary-color;
+      i {
+        color: $primary-color;
+      }
+    }
+  }
+  .live-demo {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    z-index: 2;
+    transform: scale(0);
+    transition: 400ms;
+
+    &:hover {
+      color: $primary-color;
+      i {
+        color: $primary-color;
+      }
+    }
+  }
+  .whole-project {
+    display: flex;
+    flex-direction: column;
+    a {
+      font-size: 14px;
+    }
+  }
+  .project-1 {
+  }
+  .project-title {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    z-index: 2;
+    transform: scale(0);
+    transition: 400ms;
     width: 100%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 5px;
+      bottom: 0;
+      background-color: $primary-color;
+    }
+  }
+  .project-head {
+    font-size: 40px;
+    margin-top: 15rem;
+    margin-left: 0;
+    text-align: center;
+  }
+  .list-items {
+    display: flex;
+  }
+  .empty {
+    padding: 0.5rem;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+
+    ul {
+      padding: 1rem;
+      padding-top: 0.5rem;
+    }
+  }
+  .project-2 {
+    img {
+      height: 250px;
+    }
+  }
+  .project-title-2 {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    z-index: 2;
+    transform: scale(0);
+    transition: 400ms;
+    width: 100%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 105px;
+      height: 5px;
+      bottom: 0;
+      background-color: $primary-color;
+    }
+  }
+
+  //about
+  #s2 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .about {
+    padding: 0.5rem;
+    padding-left: 0;
+    border-radius: 25px;
+    margin: 0.5rem;
+    margin-top: 15rem;
+    width: 100%;
+
+    h2 {
+      padding-left: 1rem;
+      font-size: 50px;
+    }
+
+    div {
+      border-radius: 25px;
+      transition: 400ms;
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+
+  nav {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3rem;
+    max-width: 100%;
+    background-color: lighten($background, 7);
+    opacity: 0.5;
+    transition: 400ms;
+
+    &:hover {
+      opacity: 1;
+      &:hover {
+      }
+    }
+
+    a {
+      font-weight: 800;
+
+      &:nth-child(1) {
+        position: absolute;
+        left: 15%;
+        top: 15px;
+      }
+      &:nth-child(2) {
+        position: absolute;
+        left: 35%;
+        top: 15px;
+      }
+      &:nth-child(3) {
+        position: absolute;
+        left: 55%;
+        top: 15px;
+      }
+      &:nth-child(4) {
+        position: absolute;
+        left: 75%;
+        top: 15px;
+      }
+    }
+  }
+
+  .top {
+    transform: translateY(-200px);
+  }
+  .underline {
+    height: 3px;
+    display: none;
+    position: fixed;
+    top: 33px;
+    left: 14.8%;
+    z-index: 999;
+    width: 40px;
+    transition: 400ms;
+    background-color: $primary-color;
+  }
+
+  footer {
+    i {
+      transform: scale(1);
+    }
+  }
+
+  .active {
+    color: $primary-color;
   }
 }

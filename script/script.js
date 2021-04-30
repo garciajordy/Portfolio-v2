@@ -159,17 +159,25 @@ var home = document.getElementById("s1").scrollHeight
 var about = document.getElementById("s2").scrollHeight
 var project = document.getElementById("s3").scrollHeight
 var contact = document.getElementById("s4").scrollHeight
+
 function scrolling() {
     navbar()
    if (document.documentElement.scrollTop < home) {
         line.classList.remove("about-line")
         line.classList.remove("project-line")
-    } else if (document.documentElement.scrollTop < about) {
-        line.classList.remove("project-line")
+        line.classList.remove("contact-line")
+    } else if (document.documentElement.scrollTop < about+home) {
+       line.classList.remove("project-line")
+       line.classList.remove("contact-line")
         line.classList.add("about-line")
-    } else if (document.documentElement.scrollTop < project) {
+   } else if (document.documentElement.scrollTop < project+about) {
         line.classList.remove("about-line")
+        line.classList.remove("contact-line")
         line.classList.add("project-line")
+}  else if (document.documentElement.scrollTop < contact+project+about+home) {
+    line.classList.remove("about-line")
+    line.classList.remove("project-line")
+    line.classList.add("contact-line")
 }
 }
 function navbar() {
@@ -182,10 +190,7 @@ function navbar() {
     }
  }
 window.onscroll = function (){ scrolling() }
-    console.log(home)
-    console.log(about)
-    console.log(project)
-    console.log(contact)
+  
 
-
-//nameWriter()
+console.log(contact)
+nameWriter()
