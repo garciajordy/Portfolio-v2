@@ -3,6 +3,7 @@
   margin-top: 1rem;
   font-size: 3rem;
   z-index: 5;
+  margin-bottom: 5rem;
   text-align: center;
 }
 #head-one {
@@ -11,14 +12,19 @@
 }
 .head-con {
   display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 3rem;
+}
+.typing-con {
+  display: flex;
 }
 #span-one,
 #head-two {
   font-size: 50px;
 }
 .intro-con {
-  margin: 3rem;
-  margin-top: 8rem;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
 
@@ -72,24 +78,24 @@
     left: 20%;
   }
   to {
-    top: 80%;
+    top: 140%;
     opacity: 0;
     left: 30%;
-    transform: rotate(100deg);
+    transform: rotate(170deg);
   }
 }
 @keyframes hexagon2 {
   from {
     top: -20%;
     opacity: 0.3;
-    left: 5%;
+    left: 15%;
   }
   to {
-    top: 80%;
+    top: 140%;
     opacity: 0;
     left: 20%;
 
-    transform: rotate(120deg);
+    transform: rotate(200deg);
   }
 }
 @keyframes hexagon3 {
@@ -99,36 +105,36 @@
     left: 20%;
   }
   to {
-    top: 80%;
+    top: 140%;
     opacity: 0;
-    left: 5%;
-    transform: rotate(180deg);
+    left: 25%;
+    transform: rotate(240deg);
   }
 }
 @keyframes hexagon4 {
   from {
     top: -20%;
     opacity: 0.3;
-    left: 80%;
+    left: 75%;
   }
   to {
-    top: 80%;
+    top: 140%;
     opacity: 0;
-    left: 90%;
-    transform: rotate(80deg);
+    left: 75%;
+    transform: rotate(150deg);
   }
 }
 @keyframes hexagon5 {
   from {
     top: -20%;
     opacity: 0.3;
-    left: 90%;
+    left: 75%;
   }
   to {
-    top: 80%;
+    top: 140%;
     opacity: 0;
     left: 70%;
-    transform: rotate(90deg);
+    transform: rotate(180deg);
   }
 }
 @keyframes hexagon6 {
@@ -138,10 +144,10 @@
     left: 70%;
   }
   to {
-    top: 80%;
+    top: 140%;
     opacity: 0;
     left: 50%;
-    transform: rotate(-150deg);
+    transform: rotate(-230deg);
   }
 }
 @keyframes hexagon7 {
@@ -151,10 +157,10 @@
     left: 60%;
   }
   to {
-    top: 80%;
+    top: 140%;
     opacity: 0;
     left: 30%;
-    transform: rotate(-140deg);
+    transform: rotate(-210deg);
   }
 }
 @keyframes hexagon8 {
@@ -164,9 +170,9 @@
     left: 50%;
   }
   to {
-    top: 80%;
+    top: 140%;
     opacity: 0;
-    left: 80%;
+    left: 75%;
     transform: rotate(-200deg);
   }
 }
@@ -177,10 +183,10 @@
     left: 40%;
   }
   to {
-    top: 80%;
+    top: 140%;
     opacity: 0;
     left: 30%;
-    transform: rotate(-110deg);
+    transform: rotate(-180deg);
   }
 }
 @keyframes hexagon10 {
@@ -190,52 +196,52 @@
     left: 20%;
   }
   to {
-    top: 80%;
+    top: 140%;
     opacity: 0;
-    left: 10%;
-    transform: rotate(-160deg);
+    left: 15%;
+    transform: rotate(-240deg);
   }
 }
 @keyframes hexagon11 {
   from {
     top: -20%;
     opacity: 0.3;
-    left: 10%;
+    left: 15%;
   }
   to {
-    top: 80%;
+    top: 140%;
     opacity: 0;
     left: 30%;
-    transform: rotate(180deg);
+    transform: rotate(260deg);
   }
 }
 .hexagon2 {
-  animation: hexagon2 ease-out infinite 15s 5s;
+  animation: hexagon2 ease-out infinite 18s 5s;
 }
 .hexagon3 {
-  animation: hexagon3 ease-out infinite 19s 15s;
+  animation: hexagon3 ease-out infinite 22s 15s;
 }
 .hexagon4 {
-  animation: hexagon4 ease-out infinite 16s 5s;
+  animation: hexagon4 ease-out infinite 19s 5s;
 }
 .hexagon5 {
-  animation: hexagon5 ease-out infinite 20s 01s;
+  animation: hexagon5 ease-out infinite 23s 01s;
 }
 .hexagon6 {
-  animation: hexagon6 ease-out infinite 14s 16s;
+  animation: hexagon6 ease-out infinite 17s 16s;
 }
 .hexagon7 {
-  animation: hexagon7 ease-out infinite 13s 12s;
+  animation: hexagon7 ease-out infinite 16s 12s;
 }
 .hexagon8 {
-  animation: hexagon8 ease-out infinite 19s 12s;
+  animation: hexagon8 ease-out infinite 22s 12s;
 }
 .hexagon9 {
-  animation: hexagon9 ease-out infinite 11s 3s;
+  animation: hexagon9 ease-out infinite 16s 3s;
 }
 .hexagon10 {
-  animation: hexagon9 ease-out infinite 11s 8s;
+  animation: hexagon9 ease-out infinite 15s 8s;
 }
 .hexagon11 {
-  animation: hexagon9 ease-out infinite 11s 9s;
+  animation: hexagon9 ease-out infinite 16s 9s;
 }

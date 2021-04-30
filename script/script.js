@@ -155,10 +155,10 @@ function role() {
 
 let nav = document.getElementById("nav")
 let line = document.getElementById("line")
-var home = document.getElementById("s1").scrollHeight
-var about = document.getElementById("s2").scrollHeight
-var project = document.getElementById("s3").scrollHeight
-var contact = document.getElementById("s4").scrollHeight
+var home = document.getElementById("s1").clientHeight
+var about = document.getElementById("s2").clientHeight
+var project = document.getElementById("s3").clientHeight
+var contact = document.getElementById("s4").clientHeight
 
 function scrolling() {
     navbar()

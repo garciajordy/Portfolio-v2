@@ -13,9 +13,10 @@
       font-size: 25px;
     }
   }
+  .head-con {
+    padding: 1rem;
+  }
   .intro-con {
-    margin: 0.5rem;
-    margin-top: 6rem;
     p {
       font-size: 20px;
       padding-right: 0;
@@ -74,22 +75,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    div {
-      margin: 1rem;
-      padding: 1rem 2rem;
-      display: flex;
-      flex-direction: column;
-      font-size: 20px;
-      background-color: $background;
-      border-radius: 20px;
-      border: #fff solid 5px;
-      transition: 400ms;
-
-      &:hover {
-        padding: 0.5rem 1rem;
-        border: darken($primary-color, 10) solid 5px;
-      }
-    }
   }
 
   //// Project
@@ -382,9 +367,6 @@
   form {
     display: flex;
     flex-direction: column;
-    input {
-      width: 200px;
-    }
   }
 
   .contact {
@@ -395,6 +377,7 @@
     .contact-con {
       display: flex;
       justify-content: center;
+      width: 80%;
     }
     h1 {
       font-size: 40px;
