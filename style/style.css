@@ -604,6 +604,7 @@ nav a:nth-child(4) {
 .whole-project {
   display: -ms-grid;
   display: grid;
+  margin-top: 3rem;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
 }
@@ -619,11 +620,13 @@ nav a:nth-child(4) {
 }
 
 .project {
-  margin: 5rem;
+  margin: 1rem 2rem;
   overflow: hidden;
   position: relative;
   border-radius: 15px;
   z-index: 1;
+  width: 90%;
+  max-height: 350px;
 }
 
 .project img {
@@ -652,7 +655,7 @@ nav a:nth-child(4) {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  font-size: 20px;
+  font-size: 1rem;
   z-index: 1;
   -webkit-transform: scale(0);
           transform: scale(0);
@@ -739,10 +742,6 @@ nav a:nth-child(4) {
   grid-column: 2/3;
 }
 
-.project .project-2 img {
-  height: 250px;
-}
-
 .project .project-title-2 {
   position: absolute;
   top: 50%;
@@ -802,8 +801,11 @@ nav a:nth-child(4) {
 }
 
 .empty {
-  padding: 5rem;
-  font-size: 16px;
+  font-size: 1.5vw;
+}
+
+.empty .list-items {
+  margin-left: 2rem;
 }
 
 .empty ul {

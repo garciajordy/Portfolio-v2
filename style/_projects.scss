@@ -2,6 +2,7 @@ $primary-color: rgb(233, 78, 27);
 
 .whole-project {
   display: grid;
+  margin-top: 3rem;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -14,11 +15,13 @@ $primary-color: rgb(233, 78, 27);
 }
 
 .project {
-  margin: 5rem;
+  margin: 1rem 2rem;
   overflow: hidden;
   position: relative;
   border-radius: 15px;
   z-index: 1;
+  width: 90%;
+  max-height: 350px;
 
   img {
     transform: scale(1.05);
@@ -37,7 +40,7 @@ $primary-color: rgb(233, 78, 27);
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 20px;
+    font-size: 1rem;
     z-index: 1;
     transform: scale(0);
 
@@ -112,10 +115,6 @@ $primary-color: rgb(233, 78, 27);
 
   .project-2 {
     grid-column: 2/3;
-
-    img {
-      height: 250px;
-    }
   }
 
   .project-title-2 {
@@ -173,8 +172,10 @@ $primary-color: rgb(233, 78, 27);
 }
 
 .empty {
-  padding: 5rem;
-  font-size: 16px;
+  font-size: 1.5vw;
+  .list-items {
+    margin-left: 2rem;
+  }
 
   ul {
     padding: 1rem;
