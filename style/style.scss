@@ -1,10 +1,13 @@
 @font-face {
   font-family: "brandon_grotesqueregular";
-  src: url("brandon_reg-webfont.woff2") format("woff2"),
+  src:
+    url("brandon_reg-webfont.woff2") format("woff2"),
     url("brandon_reg-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+$background: #011627;
+$primary-color: rgb(233, 78, 27);
 
 @import "header";
 @import "navbar";
@@ -29,23 +32,26 @@ body {
 }
 
 body {
-  background-image: linear-gradient(
-    #011627,
-    #011627,
-    #011627,
-    #011627,
-    #011627a1,
-    rgb(156, 156, 156)
-  );
+  background-image:
+    linear-gradient(
+      #011627,
+      #011627,
+      #011627,
+      #011627,
+      #011627a1,
+      rgb(156, 156, 156)
+    );
   z-index: -1;
 }
 
 a {
   text-decoration: none;
 }
+
 abbr {
   font-weight: 100;
 }
+
 span {
   color: rgb(233, 78, 27);
 }

@@ -15,6 +15,8 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
     font-weight: 800;
+    transition: 250ms;
+
     &:hover {
       color: $primary-color;
     }
@@ -23,7 +25,6 @@ footer {
   div {
     div {
       display: flex;
-
       margin: 1rem;
       justify-content: center;
 
@@ -32,16 +33,19 @@ footer {
       }
     }
   }
+
   i {
     transform: scale(1.5);
+    transition: 250ms;
   }
+
   i:hover {
     color: $primary-color;
   }
 }
-footer:before {
-  content: "";
 
+footer::before {
+  content: "";
   position: absolute;
   top: -50px;
   left: 0;
@@ -51,7 +55,8 @@ footer:before {
   transform: skew(0deg, -6deg);
   z-index: -1;
 }
-footer:after {
+
+footer::after {
   content: "";
   position: absolute;
   z-index: -1;

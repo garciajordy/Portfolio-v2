@@ -3,19 +3,24 @@
   body {
     overflow-x: hidden;
   }
+
   .header {
     font-size: 40px;
   }
+
   #head-one,
   #head-two {
     font-size: 25px;
+
     span {
       font-size: 25px;
     }
   }
+
   .head-con {
     padding: 1rem;
   }
+
   .intro-con {
     p {
       font-size: 20px;
@@ -26,6 +31,7 @@
       font-size: 40px;
     }
   }
+
   .hexagon {
     width: 50px;
     height: 28.87px;
@@ -33,8 +39,8 @@
     margin: 14.43px 0;
   }
 
-  .hexagon:before,
-  .hexagon:after {
+  .hexagon::before,
+  .hexagon::after {
     content: "";
     position: absolute;
     width: 0;
@@ -42,33 +48,17 @@
     border-right: 25px solid transparent;
   }
 
-  .hexagon:before {
+  .hexagon::before {
     bottom: 100%;
     border-bottom: 14.43px solid #64c7cc;
   }
 
-  .hexagon:after {
+  .hexagon::after {
     top: 100%;
     width: 0;
     border-top: 14.43px solid #64c7cc;
   }
 
-  nav {
-    a {
-      font-size: 12px;
-    }
-  }
-
-  .contact {
-    h1 {
-      font-size: 40px;
-      padding: 0;
-      margin-bottom: 1rem;
-      margin-top: 15rem;
-      width: 100%;
-      text-align: center;
-    }
-  }
   .contact-con {
     text-align: center;
     display: flex;
@@ -85,44 +75,45 @@
     align-items: center;
   }
 
+  footer {
+    i {
+      transform: scale(1);
+      margin: 1rem;
+    }
+
+    div {
+      gap: 0;
+    }
+  }
+
+  .whole-project {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      font-size: 14px;
+    }
+
+    img {
+      height: 150px;
+    }
+  }
+
   .project {
     margin: 1rem;
     overflow: hidden;
     position: relative;
     border-radius: 15px;
     z-index: 1;
-    img {
-      transform: scale(1.05);
-    }
-    .project-con {
-      width: 100%;
-    }
-    &:hover {
-      .project-title,
-      .project-title-2 {
-        transform: scale(1);
-        top: 10px;
-      }
-      .project-text {
-        transform: scale(1);
-      }
-      .live-demo {
-        transform: scale(1);
-        bottom: 15px;
-        right: 15px;
-      }
-      .github {
-        transform: scale(1);
-        bottom: 15px;
-        left: 15px;
-      }
-      img {
-        transform: scale(1.3);
-      }
-    }
+
     img {
       max-width: 100%;
       transition: 500ms;
+      transform: scale(1.05);
+    }
+
+    .project-con {
+      width: 100%;
     }
 
     .project-text {
@@ -151,137 +142,108 @@
         background-color: rgba(0, 0, 0, 0.616);
       }
     }
-  }
-  .github {
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-    z-index: 2;
-    transform: scale(0);
-    transition: 400ms;
-    i {
+
+    .github {
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      z-index: 2;
+      transform: scale(0);
       transition: 400ms;
+
+      i {
+        transition: 400ms;
+      }
+
+      &:hover {
+        color: $primary-color;
+
+        i {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .live-demo {
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+      z-index: 2;
+      transform: scale(0);
+      transition: 400ms;
+
+      &:hover {
+        color: $primary-color;
+
+        i {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .project-title {
+      position: absolute;
+      top: 50%;
+      text-align: center;
+      z-index: 2;
+      transform: scale(0);
+      transition: 400ms;
+      width: 100%;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 70px;
+        height: 5px;
+        bottom: 0;
+        background-color: $primary-color;
+      }
+    }
+
+    .project-title-2 {
+      position: absolute;
+      top: 50%;
+      text-align: center;
+      z-index: 2;
+      transform: scale(0);
+      transition: 400ms;
+      width: 100%;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 105px;
+        height: 5px;
+        bottom: 0;
+        background-color: $primary-color;
+      }
     }
 
     &:hover {
-      color: $primary-color;
-      i {
-        color: $primary-color;
+      .project-title,
+      .project-title-2 {
+        transform: scale(1);
+        top: 10px;
       }
-    }
-  }
-  .live-demo {
-    position: absolute;
-    bottom: 50%;
-    right: 50%;
-    z-index: 2;
-    transform: scale(0);
-    transition: 400ms;
 
-    &:hover {
-      color: $primary-color;
-      i {
-        color: $primary-color;
+      .project-text {
+        transform: scale(1);
       }
-    }
-  }
-  .whole-project {
-    display: flex;
-    flex-direction: column;
-    a {
-      font-size: 14px;
-    }
-  }
-  .project-1 {
-  }
-  .project-title {
-    position: absolute;
-    top: 50%;
-    text-align: center;
-    z-index: 2;
-    transform: scale(0);
-    transition: 400ms;
-    width: 100%;
 
-    &::before {
-      content: "";
-      position: absolute;
-      width: 70px;
-      height: 5px;
-      bottom: 0;
-      background-color: $primary-color;
-    }
-  }
-  .project-head {
-    font-size: 40px;
-    margin-top: 15rem;
-    margin-left: 0;
-    text-align: center;
-  }
-  .list-items {
-    display: flex;
-  }
-  .empty-2 {
-    order: 2;
-  }
-  .empty {
-    padding: 0.5rem;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
+      .live-demo {
+        transform: scale(1);
+        bottom: 15px;
+        right: 15px;
+      }
 
-    ul {
-      padding: 1rem;
-      padding-top: 0.5rem;
-    }
-  }
-  .project-2 {
-    img {
-      height: 250px;
-    }
-  }
-  .project-title-2 {
-    position: absolute;
-    top: 50%;
-    text-align: center;
-    z-index: 2;
-    transform: scale(0);
-    transition: 400ms;
-    width: 100%;
+      .github {
+        transform: scale(1);
+        bottom: 15px;
+        left: 15px;
+      }
 
-    &::before {
-      content: "";
-      position: absolute;
-      width: 105px;
-      height: 5px;
-      bottom: 0;
-      background-color: $primary-color;
-    }
-  }
-
-  //about
-  #s2 {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .about {
-    padding: 0.5rem;
-    padding-left: 0;
-    border-radius: 25px;
-    margin: 0.5rem;
-    margin-top: 15rem;
-    width: 100%;
-
-    h2 {
-      padding-left: 1rem;
-      font-size: 50px;
-    }
-
-    div {
-      border-radius: 25px;
-      transition: 400ms;
-      p {
-        font-size: 20px;
+      img {
+        transform: scale(1.3);
       }
     }
   }
@@ -300,11 +262,10 @@
 
     &:hover {
       opacity: 1;
-      &:hover {
-      }
     }
 
     a {
+      font-size: 12px;
       font-weight: 800;
 
       &:nth-child(1) {
@@ -312,16 +273,19 @@
         left: 15%;
         top: 15px;
       }
+
       &:nth-child(2) {
         position: absolute;
         left: 35%;
         top: 15px;
       }
+
       &:nth-child(3) {
         position: absolute;
         left: 55%;
         top: 15px;
       }
+
       &:nth-child(4) {
         position: absolute;
         left: 75%;
@@ -330,9 +294,93 @@
     }
   }
 
+  .project-head {
+    font-size: 40px;
+    margin-top: 15rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .list-items {
+    display: flex;
+  }
+
+  .empty-2 {
+    order: 2;
+  }
+
+  .empty {
+    padding: 0.5rem;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+
+    ul {
+      padding: 1rem;
+      padding-top: 0.5rem;
+    }
+  }
+
+  //about
+  #s2 {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .contact-con {
+      display: flex;
+      justify-content: center;
+      width: 80%;
+    }
+
+    h1 {
+      padding: 0.5rem;
+      margin-top: 15rem;
+      font-size: 40px;
+      margin-bottom: 1rem;
+      width: 100%;
+      text-align: center;
+    }
+
+    p {
+      width: 100%;
+      font-size: 20px;
+    }
+  }
+
+  .about {
+    padding: 0.5rem;
+    padding-left: 0;
+    border-radius: 25px;
+    margin: 0.5rem;
+    margin-top: 15rem;
+    width: 100%;
+
+    h2 {
+      padding-left: 1rem;
+      font-size: 50px;
+    }
+
+    div {
+      border-radius: 25px;
+      transition: 400ms;
+
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+
   .top {
     transform: translateY(-200px);
   }
+
   .underline {
     height: 3px;
     display: none;
@@ -345,21 +393,6 @@
     background-color: $primary-color;
   }
 
-  footer {
-    i {
-      transform: scale(1);
-      margin: 1rem;
-    }
-    div {
-      gap: 0;
-      div {
-        a {
-          margin: 0;
-        }
-      }
-    }
-  }
-
   .active {
     color: $primary-color;
   }
@@ -367,26 +400,5 @@
   form {
     display: flex;
     flex-direction: column;
-  }
-
-  .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    .contact-con {
-      display: flex;
-      justify-content: center;
-      width: 80%;
-    }
-    h1 {
-      font-size: 40px;
-      padding: 0.5rem;
-      margin-top: 15rem;
-    }
-    p {
-      width: 100%;
-      font-size: 20px;
-    }
   }
 }

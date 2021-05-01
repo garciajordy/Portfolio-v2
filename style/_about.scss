@@ -1,9 +1,11 @@
 $background: #011627;
 $primary-color: rgb(233, 78, 27);
+
 #s2 {
   display: flex;
   justify-content: flex-end;
 }
+
 .about {
   padding: 2rem;
   padding-left: 2rem;
@@ -24,6 +26,7 @@ $primary-color: rgb(233, 78, 27);
     line-height: 35px;
     border-radius: 25px;
     transition: 400ms;
+
     p {
       font-size: 25px;
     }

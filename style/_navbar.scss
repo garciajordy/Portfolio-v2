@@ -15,8 +15,6 @@ nav {
 
   &:hover {
     opacity: 1;
-    &:hover {
-    }
   }
 
   a {
@@ -27,16 +25,19 @@ nav {
       left: 15%;
       top: 15px;
     }
+
     &:nth-child(2) {
       position: absolute;
       left: 35%;
       top: 15px;
     }
+
     &:nth-child(3) {
       position: absolute;
       left: 55%;
       top: 15px;
     }
+
     &:nth-child(4) {
       position: absolute;
       left: 75%;
@@ -48,6 +49,7 @@ nav {
 .top {
   transform: translateY(-200px);
 }
+
 .underline {
   height: 5px;
   position: fixed;
@@ -58,6 +60,7 @@ nav {
   transition: 400ms;
   background-color: $primary-color;
 }
+
 .about-line {
   left: 34.8%;
 }
