@@ -1031,11 +1031,11 @@ span {
   }
   #head-one,
   #head-two {
-    font-size: 25px;
+    font-size: 7vw;
   }
   #head-one span,
   #head-two span {
-    font-size: 25px;
+    font-size: 7vw;
   }
   .head-con {
     padding: 1rem;
