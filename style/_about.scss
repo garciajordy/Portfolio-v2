@@ -4,6 +4,17 @@ $primary-color: rgb(233, 78, 27);
 #s2 {
   display: flex;
   justify-content: flex-end;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 .about {

@@ -61,6 +61,7 @@
   left: 0;
   right: 0;
   height: 100vh;
+  background-color: transparent;
 }
 
 .intro-con {
@@ -85,7 +86,7 @@
 
 .hexagon {
   position: absolute;
-  z-index: -1;
+  z-index: -2;
   top: -20%;
   opacity: 0;
   width: 100px;
@@ -581,6 +582,17 @@ nav a:nth-child(4) {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  position: relative;
+}
+
+#s2::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .about {

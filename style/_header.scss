@@ -45,6 +45,7 @@
   left: 0;
   right: 0;
   height: 100vh;
+  background-color: transparent;
 }
 .intro-con {
   display: flex;
@@ -63,7 +64,7 @@
 
 .hexagon {
   position: absolute;
-  z-index: -1;
+  z-index: -2;
   top: -20%;
   opacity: 0;
   width: 100px;
