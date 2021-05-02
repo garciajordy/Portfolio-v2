@@ -39,11 +39,18 @@
 #head-two {
   font-size: 50px;
 }
-
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+}
 .intro-con {
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  height: 100%;
 
   p {
     max-width: 500px;
