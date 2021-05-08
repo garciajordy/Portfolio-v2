@@ -621,6 +621,25 @@ nav a:nth-child(4) {
   font-size: 25px;
 }
 
+.skill-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skill-con ul {
+  list-style: none;
+  font-size: 20px;
+}
+
+.skill {
+  font-weight: 900;
+  font-size: 25px;
+}
+
 .whole-project {
   display: -ms-grid;
   display: grid;
@@ -1022,6 +1041,10 @@ body {
   overflow-x: hidden;
 }
 
+.color {
+  color: #e94e1b;
+}
+
 body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#011627), color-stop(#011627), color-stop(#011627), color-stop(#011627), color-stop(#011627a1), to(#9c9c9c));
   background-image: linear-gradient(#011627, #011627, #011627, #011627, #011627a1, #9c9c9c);
@@ -1406,7 +1429,6 @@ span {
   }
   .about {
     padding: 0.5rem;
-    padding-left: 0;
     border-radius: 25px;
     margin: 0.5rem;
     margin-top: 15rem;
@@ -1451,6 +1473,14 @@ span {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .skill-con ul {
+    list-style: none;
+    font-size: 15px;
+  }
+  .skill {
+    font-weight: 900;
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */

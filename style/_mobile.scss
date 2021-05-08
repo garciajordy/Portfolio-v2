@@ -356,7 +356,6 @@
 
   .about {
     padding: 0.5rem;
-    padding-left: 0;
     border-radius: 25px;
     margin: 0.5rem;
     margin-top: 15rem;
@@ -400,5 +399,16 @@
   form {
     display: flex;
     flex-direction: column;
+  }
+
+  .skill-con {
+    ul {
+      list-style: none;
+      font-size: 15px;
+    }
+  }
+  .skill {
+    font-weight: 900;
+    font-size: 16px;
   }
 }

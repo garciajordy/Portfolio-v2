@@ -20,8 +20,6 @@ $primary-color: rgb(233, 78, 27);
 .about {
   padding: 2rem;
   padding-left: 2rem;
-  //border: darken($background, 10) solid 8px;
-  //background-color: lighten($background, 3);
   border-radius: 25px;
   margin: 3rem;
   margin-top: 15rem;
@@ -42,4 +40,17 @@ $primary-color: rgb(233, 78, 27);
       font-size: 25px;
     }
   }
+}
+.skill-con {
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    list-style: none;
+    font-size: 20px;
+  }
+}
+.skill {
+  font-weight: 900;
+  font-size: 25px;
 }
