@@ -166,15 +166,15 @@ function scrolling() {
         line.classList.remove("about-line")
         line.classList.remove("project-line")
         line.classList.remove("contact-line")
-    } else if (document.documentElement.scrollTop < about+home) {
-       line.classList.remove("project-line")
-       line.classList.remove("contact-line")
+    } else if (document.documentElement.scrollTop < project+home+home) {
+        line.classList.remove("project-line")
+        line.classList.remove("contact-line")
         line.classList.add("about-line")
-   } else if (document.documentElement.scrollTop < project+about) {
+    } else if (document.documentElement.scrollTop < project+about+project) {
         line.classList.remove("about-line")
         line.classList.remove("contact-line")
         line.classList.add("project-line")
-}  else if (document.documentElement.scrollTop < contact+project+about+home) {
+}  else if (document.documentElement.scrollTop < contact+project+about+home+project) {
     line.classList.remove("about-line")
     line.classList.remove("project-line")
     line.classList.add("contact-line")

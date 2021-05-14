@@ -4,7 +4,12 @@ $primary-color: rgb(233, 78, 27);
 #s2 {
   display: flex;
   justify-content: flex-end;
+  flex-direction: column;
   position: relative;
+
+  h2 {
+    text-align: center;
+  }
 
   &::before {
     content: "";

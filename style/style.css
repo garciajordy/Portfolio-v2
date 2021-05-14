@@ -582,7 +582,15 @@ nav a:nth-child(4) {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
+}
+
+#s2 h2 {
+  text-align: center;
 }
 
 #s2::before {
@@ -836,7 +844,6 @@ nav a:nth-child(4) {
 .project-head {
   font-size: 50px;
   margin-top: 15rem;
-  margin-left: 8rem;
 }
 
 .empty {
